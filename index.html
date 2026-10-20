@@ -16,11 +16,12 @@
     </nav>
     <h1>Privacy policy</h1>
     <p class="lede">BP Diary (Tansiyon Günlüğü) is an offline diary for blood pressure readings you type from a cuff. This phone does not measure blood pressure. The app is not a medical device and does not diagnose you.</p>
-    <p class="meta">Effective 18 October 2026. Package id <code>com.presslog.bpdiary</code>. English is the source text.</p>
+    <p class="meta">Effective 20 October 2026. Package id <code>com.presslog.bpdiary</code>. English is the source text.</p>
 
     <h2>Data stays on your phone</h2>
     <p>Readings, notes, tags, and profiles are stored in a database on the device. They are not sent to us. There is no account and no cloud copy of the diary.</p>
     <p>We do not collect, sell, or share that diary. There is no analytics SDK, no advertising SDK, and no advertising identifier.</p>
+    <p>From version 1.1 the Android app has no internet permission at all. Purchases go through the Google Play Store app on your phone.</p>
     <ul>
       <li>Systolic, diastolic, pulse, the date and time, notes, and tags stay on the phone.</li>
       <li>Profile names, language, category-color choice, and reminder times stay on the phone.</li>
@@ -34,12 +35,13 @@
     <p>Apple Health and Health Connect are not connected. The diary is not written to those services in this version.</p>
 
     <h2>Free trial and one-time unlock</h2>
-    <p>Every feature is free for 7 days. There is no payment during the trial and nothing renews. On Android the trial start time is stored on the phone only. On iOS the trial starts with a free (zero-price) App Store item, so Apple records that you started it; we do not receive that record.</p>
+    <p>Every feature is free for 7 days. There is no payment during the trial and nothing renews. On Android the trial record (only its start time and the latest time the app saw) is kept on the phone in the app's storage and in Google Play services' Block Store, with cloud backup turned off, so reinstalling the app does not start a second trial. It never leaves the phone and we do not receive it. On iOS the trial starts with a free (zero-price) App Store item, so Apple records that you started it; we do not receive that record.</p>
     <p>After 7 days the diary stays closed until a one-time unlock is owned. Your readings stay on the phone while it is closed. On Google Play the product id is <code>bpdiary_unlock</code>. The App Store uses the same one-time product. There is no subscription.</p>
-    <p>Google Play or Apple handles billing. We do not process card numbers, and the app does not receive your card number, name, or email. The price is shown by the store. If you already bought the unlock, restore it in the app. A note that the unlock was owned can stay on the device so the app can restore it when the store cannot be reached.</p>
+    <p>Google Play or Apple handles billing. We do not process card numbers, and the app does not receive your card number, name, or email. The price is shown by the store. If you already bought the unlock, restore it in the app. A note that the unlock was owned can stay on the device so the app can restore it when the store cannot be reached. The app checks the store’s signature on the purchase on the phone; nothing is sent to us.</p>
 
     <h2>Backup file</h2>
-    <p>You can save every profile and reading in one backup file, in a place you choose on the phone, and restore it later or on a new phone. The app does not upload the file and we never receive or keep a copy. If you move the file elsewhere, such as a cloud drive, that service’s own policy applies.</p>
+    <p>You can save every profile and reading in one backup file, in a place you choose, and restore it later or on a new phone. The file is encrypted with a password you choose; without it nobody can open the file, including us. The app does not upload the file and we never receive or keep a copy.</p>
+    <p>On Android you can also turn on an automatic backup: you pick one file once (for example on Google Drive), and when you open the app and the interval you chose has passed, the app overwrites that file with a fresh encrypted copy. The password is kept in your phone’s secure keystore. If the file is on a cloud drive, that service syncs it under its own policy; the app itself sends nothing.</p>
 
     <h2>Export and import</h2>
     <p>PDF and CSV leave the phone only when you choose to share them. The file then goes to the app you pick, such as Mail or Files. We do not receive it. A CSV you import is added to the diary on this phone.</p>
